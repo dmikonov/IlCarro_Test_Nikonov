@@ -19,7 +19,7 @@ public class LoginTests extends TestBase{
     @Test
     public void loginNegativeTestsWrongEmail(){
         app.getHelperUser().openLoginForm();
-        app.getHelperUser().fillLoginForm("d02077gmail.com","Ww12345$");
+        app.getHelperUser().fillLoginForm("d0208877gmail.com","Ww12345$");
         app.getHelperUser().submitLogin();
     }
 

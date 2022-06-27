@@ -25,8 +25,7 @@ public class HelperUser extends HelperBase{
     }
 
     public boolean isLogged() {
-        List<WebElement> list = wd.findElements(By.cssSelector("button[type='button']"));
-        return list.size()>0;
+        return Element(By.cssSelector("button[type='button']"));
     }
 
     public void logout() {
