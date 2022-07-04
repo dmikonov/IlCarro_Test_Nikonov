@@ -14,13 +14,13 @@ public class LoginTests extends TestBase{
     public void loginASuccess(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("d020797@gmail.com","Ww12345$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
     }
     @Test
     public void loginNegativeTestsWrongEmail(){
         app.getHelperUser().openLoginForm();
-        app.getHelperUser().fillLoginForm("d0208877gmail.com","Ww12345$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().fillLoginForm("d020877@@gmail.com","Ww12345$");
+        app.getHelperUser().submit();
     }
 
 
