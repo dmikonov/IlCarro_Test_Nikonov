@@ -1,0 +1,9 @@
+20:09:40.418 INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+20:09:40.491 INFO  tests.TestBase - Start method with name ->>addNewCarSuccess
+20:09:46.133 INFO  manager.HelperBase - User name -->null null
+20:09:47.342 INFO  tests.TestBase - Car is -> Car(address=Haifa, Israel, make=BMW, model=M5, year=2021, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsunption=6.5, carRegNumber=22-3331162, price=65, distanceIncluded=800, features=type of features, about=Very nice car)
+20:09:56.851 INFO  tests.TestBase - Start method with name ->>loginASuccess
+20:10:00.145 INFO  tests.TestBase - Start method with name ->>loginNegativeTestsWrongEmail
+20:10:11.431 INFO  tests.TestBase - Start method with name ->>registrationSuccess
+20:10:19.617 INFO  tests.TestBase - Start method with name ->>registrationSuccess2
+20:10:22.944 INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize

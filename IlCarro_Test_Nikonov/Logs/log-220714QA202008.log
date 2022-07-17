@@ -1,0 +1,12 @@
+20:20:15.047 INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+20:20:15.099 INFO  tests.TestBase - Start method with name ->>addNewCarSuccess
+20:20:20.697 INFO  manager.HelperBase - User name -->null null
+20:20:21.716 INFO  tests.TestBase - Car is -> Car(address=Haifa, Israel, make=BMW, model=M5, year=2021, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsunption=6.5, carRegNumber=22-3331259, price=65, distanceIncluded=800, features=type of features, about=Very nice car)
+20:20:31.082 INFO  tests.TestBase - Start method with name ->>loginASuccess
+20:20:34.107 INFO  tests.TestBase - Start method with name ->>loginNegativeTestsWrongEmail
+20:20:37.049 INFO  tests.TestBase - Start method with name ->>registrationSuccess
+20:20:42.082 INFO  tests.TestBase - User -> User{name='Lis', lastName='Snow', email='fox1242@mail.com', password='Ff12345$', phone='null'}
+20:20:45.300 INFO  tests.TestBase - Start method with name ->>registrationSuccess2
+20:20:45.507 INFO  tests.TestBase - User -> User{name='Lis', lastName='Snow', email='fox1245@mail.com', password='Ff12345$', phone='null'}
+20:20:48.618 INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize
+20:20:48.786 INFO  tests.TestBase - User -> User{name='Zoa', lastName='DSnow', email='zoa@gmail.com', password='Zoa', phone='null'}

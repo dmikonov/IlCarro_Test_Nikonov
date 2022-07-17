@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.199s</div>
+<div class="counter">6.297s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,22 +66,25 @@
 <li>
 <a href="#tab1">Tests</a>
 </li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="registrationSuccess"></a>
-<h3 class="failures">registrationSuccess</h3>
+<a name="registrationWrongPasswordFormatSize"></a>
+<h3 class="failures">registrationWrongPasswordFormatSize</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.dialog-container&quot;}
-  (Session info: chrome=102.0.5005.63)
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.error div:last-child&quot;}
+  (Session info: chrome=103.0.5060.114)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.2', revision: '683ccb65d6'
 System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f3d44491abb9e7ec1e2029a340b4922e, findElement {using=css selector, value=div.dialog-container}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64695/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3d44491abb9e7ec1e2029a340b4922e
+Command: [c5de64174422dd9f019aa2285b2beeac, findElement {using=css selector, value=div.error div:last-child}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52330}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52330/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c5de64174422dd9f019aa2285b2beeac
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,8 +100,8 @@ Session ID: f3d44491abb9e7ec1e2029a340b4922e
 	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
-	at app//manager.ApplicationManager.getMessage(ApplicationManager.java:34)
-	at app//tests.RegistrationTests.registrationSuccess(RegistrationTests.java:19)
+	at app//manager.HelperUser.isErrorPasswordFormatDisplayed(HelperUser.java:85)
+	at app//tests.RegistrationTests.registrationWrongPasswordFormatSize(RegistrationTests.java:54)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,11 +163,19 @@ Session ID: f3d44491abb9e7ec1e2029a340b4922e
 </tr>
 </thead>
 <tr>
-<td class="failures">registrationSuccess</td>
-<td class="failures">6.199s</td>
+<td class="failures">registrationWrongPasswordFormatSize</td>
+<td class="failures">6.297s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:25:19.425 INFO  tests.TestBase - Start method with name -&gt;&gt;registrationWrongPasswordFormatSize
+20:25:24.513 INFO  tests.TestBase - User -&gt; User{name='Zoa', lastName='DSnow', email='zoa@gmail.com', password='Zoa', phone='null'}
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -174,7 +185,7 @@ Session ID: f3d44491abb9e7ec1e2029a340b4922e
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at Jul 3, 2022, 11:59:44 PM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at Jul 14, 2022, 8:25:37 PM</p>
 </div>
 </div>
 </body>

@@ -1,0 +1,2 @@
+20:16:40.761 INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+20:16:40.843 INFO  tests.TestBase - Start method with name ->>loginNegativeTestsWrongEmail

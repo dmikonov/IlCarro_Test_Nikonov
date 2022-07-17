@@ -1,0 +1,3 @@
+20:25:19.348 INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+20:25:19.425 INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize
+20:25:24.513 INFO  tests.TestBase - User -> User{name='Zoa', lastName='DSnow', email='zoa@gmail.com', password='Zoa', phone='null'}

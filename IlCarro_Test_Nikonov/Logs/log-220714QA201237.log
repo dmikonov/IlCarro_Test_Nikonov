@@ -1,0 +1,2 @@
+20:12:43.998 INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+20:12:44.067 INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize
