@@ -1,0 +1,10 @@
+19:00:18.437 INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+19:00:18.519 INFO  tests.TestBase - Start method with name ->>addNewCarSuccess
+19:00:24.213 INFO  manager.HelperBase - User name -->null null
+19:00:25.290 INFO  tests.TestBase - Car is -> Car(address=Haifa, Israel, make=BMW, model=M5, year=2021, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsunption=6.5, carRegNumber=22-3331016, price=65, distanceIncluded=800, features=type of features, about=Very nice car)
+19:00:29.083 INFO  manager.MyListener - WebDriver start find element -->By.xpath: .//option[@value = "Petrol"]
+19:00:29.120 INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "Petrol"]
+19:00:29.251 INFO  manager.MyListener - WebDriver start find element -->By.xpath: .//option[@value = "AT"]
+19:00:29.295 INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AT"]
+19:00:29.434 INFO  manager.MyListener - WebDriver start find element -->By.xpath: .//option[@value = "AWD"]
+19:00:29.490 INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AWD"]

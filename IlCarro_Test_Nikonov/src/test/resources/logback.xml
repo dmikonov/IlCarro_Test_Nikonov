@@ -4,11 +4,12 @@
         <!-- encoders are assigned the type
              ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+            <pattern>%d{HH:mm:ss.SSS}  %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
     <timestamp key="bySecond" datePattern="yyMMdd'QA'HHmmss"/>
+
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>Logs/log-${bySecond}.log</file>
         <append>true</append>
@@ -17,9 +18,11 @@
         <!-- encoders are assigned the type
              ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+            <pattern>%d{HH:mm:ss.SSS}  %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
+
+
 
     <root level="info">
         <appender-ref ref="STDOUT" />

@@ -1,0 +1,18 @@
+19:09:32.362 INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+19:09:32.448 INFO  tests.TestBase - Start method with name ->>addNewCarSuccess
+19:09:38.166 INFO  manager.HelperBase - User name -->null null
+19:09:39.242 INFO  tests.TestBase - Car is -> Car(address=Haifa, Israel, make=BMW, model=M5, year=2021, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsunption=6.5, carRegNumber=22-3331669, price=65, distanceIncluded=800, features=type of features, about=Very nice car)
+19:09:43.448 INFO  manager.MyListener - WebDriver start find element -->By.xpath: .//option[@value = "Petrol"]
+19:09:43.503 INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "Petrol"]
+19:09:43.685 INFO  manager.MyListener - WebDriver start find element -->By.xpath: .//option[@value = "AT"]
+19:09:43.737 INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AT"]
+19:09:43.902 INFO  manager.MyListener - WebDriver start find element -->By.xpath: .//option[@value = "AWD"]
+19:09:43.944 INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AWD"]
+19:09:50.766 INFO  tests.TestBase - Start method with name ->>loginASuccess
+19:09:54.201 INFO  tests.TestBase - Start method with name ->>loginNegativeTestsWrongEmail
+19:09:57.453 INFO  tests.TestBase - Start method with name ->>registrationSuccess
+19:10:02.502 INFO  tests.TestBase - User -> User{name='Lis', lastName='Snow', email='fox602@mail.com', password='Ff12345$', phone='null'}
+19:10:05.958 INFO  tests.TestBase - Start method with name ->>registrationSuccess2
+19:10:06.190 INFO  tests.TestBase - User -> User{name='Lis', lastName='Snow', email='fox606@mail.com', password='Ff12345$', phone='null'}
+19:10:09.588 INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize
+19:10:14.600 INFO  tests.TestBase - User -> User{name='Zoa', lastName='DSnow', email='zoa@gmail.com', password='Zoa', phone='null'}

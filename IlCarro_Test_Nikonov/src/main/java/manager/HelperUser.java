@@ -22,7 +22,9 @@ public class HelperUser extends HelperBase{
 
     public void fillLoginForm(String email,String password){
         type(By.id("email"),email);
+        takeScreenshots("C:/Users/Dmitrii/Desktop/QA34/IlCarro_Test_Nikonov/IlCarro_Test_Nikonov/src/test/screenshots/screen-1.png");
         type(By.id("password"),password);
+
     }
     public void fillLoginForm(User user){
         type(By.id("email"), user.getEmail());
@@ -58,11 +60,6 @@ public class HelperUser extends HelperBase{
 
     }
 
-    public void checkPolicyJS(){
-        JavascriptExecutor js = (JavascriptExecutor) wd;
-        js.executeScript("document.querySelector('#terms-of-use').click();");
-        js.executeScript("document.querySelector('#terms-of-use').checked=true;");
-    }
     public void clickOk() {
         if(isElementPresent(By.xpath("//button[text()='Ok']"))) {
             click(By.xpath("//button[text()='Ok']"));
@@ -110,8 +107,13 @@ public class HelperUser extends HelperBase{
     public void login(User user) {
         openLoginForm();
         fillLoginForm(user);
-        logger.info("User name -->" + user.getName() + " " + user.getLastName());
         submit();
         clickOk();
+    }
+
+    public void checkPolicyJS(){
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#terms-of-use').click();");
+        js.executeScript("document.querySelector('#terms-of-use').checked=true;");
     }
 }

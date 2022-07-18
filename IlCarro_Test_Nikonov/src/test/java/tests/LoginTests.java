@@ -26,10 +26,6 @@ public class LoginTests extends TestBase{
         app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in");
     }
-    @AfterMethod
-    public void postCondition(){
-        app.getHelperUser().clickOk();
-    }
     @Test
     public void loginNegativeTestsWrongEmail(){
         app.getHelperUser().openLoginForm();
@@ -37,6 +33,11 @@ public class LoginTests extends TestBase{
         app.getHelperUser().submit();
         Assert.assertNotEquals(app.getHelperUser().getMessage(),"Logged in");
     }
+    @AfterMethod
+    public void postCondition(){
+        app.getHelperUser().clickOk();
+    }
+
 
 
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.SearchTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-18T19:47:05" hostname="LAPTOP-GAODKJDU" time="4.958">
+  <properties/>
+  <testcase name="searchCurrentYear" classname="tests.SearchTests" time="4.958"/>
+  <system-out><![CDATA[22:47:05.146  INFO  tests.TestBase - Start method with name ->>searchCurrentYear
+22:47:05.152  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+22:47:05.497  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+22:47:06.989  INFO  manager.MyListener - WebDriver starts find element ---> By.id: dates
+22:47:07.159  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+22:47:07.289  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 10 ']
+22:47:07.405  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+22:47:07.535  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+22:47:07.638  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 10 ']
+22:47:07.760  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+22:47:07.891  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

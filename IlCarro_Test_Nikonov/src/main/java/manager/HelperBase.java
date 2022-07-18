@@ -1,14 +1,14 @@
 package manager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 public class HelperBase {
@@ -65,5 +65,15 @@ public class HelperBase {
         JavascriptExecutor js = (JavascriptExecutor) wd;
         js.executeScript("document.querySelector('#name').value='Lola'");
         js.executeScript("document.querySelector('#terms-of-use').checked=true;");
+    }
+
+    public void takeScreenshots(String pathToFile){
+        File tmp = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
+        File screen = new File(pathToFile);
+        try {
+            Files.copy(tmp,screen);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
