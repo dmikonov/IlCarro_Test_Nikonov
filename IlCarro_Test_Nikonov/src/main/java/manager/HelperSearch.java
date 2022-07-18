@@ -46,7 +46,8 @@ public class HelperSearch extends HelperBase{
         click(By.xpath(locator));
         int diffMonthFrom = Integer.parseInt(To[0])-Integer.parseInt(From[0]);
         clickByNextMonth(diffMonthFrom);
-        click(By.xpath(locator));
+        String locator1 = String.format("//div[text()=' %s ']",To[1]);
+        click(By.xpath(locator1));
     }
 
     private void clickByNextMonth(int count) {
@@ -56,7 +57,6 @@ public class HelperSearch extends HelperBase{
     }
 
     public boolean isListOfCarsAppeared() {
-
         return isElementPresent(By.cssSelector(".cars-container"));
     }
 }

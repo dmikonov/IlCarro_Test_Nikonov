@@ -12,7 +12,7 @@ public class SearchTests extends TestBase{
     }
     @Test
     public void searchCurrentYear(){
-        app.search().searchCurrentYear("Tel Aviv","8/10/2022","10/20/2022");
+        app.search().searchCurrentYear("Tel Aviv","8/30/2022","12/2/2022");
         app.search().submit();
         Assert.assertTrue(app.search().isListOfCarsAppeared());
     }
