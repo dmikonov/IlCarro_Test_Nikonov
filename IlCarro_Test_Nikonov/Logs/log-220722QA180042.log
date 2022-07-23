@@ -1,0 +1,19 @@
+18:00:51.657  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+18:00:51.744  INFO  tests.TestBase - Start method with name ->>searchAnyPeriod
+18:00:51.750  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+18:00:52.011  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+18:00:53.088  INFO  manager.MyListener - WebDriver starts find element ---> By.id: dates
+18:00:53.274  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+18:00:53.433  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 25 ']
+18:00:53.603  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:00:58.769  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+18:00:59.954  INFO  manager.MyListener - The name of method with error ->>>click
+18:00:59.955  INFO  manager.MyListener - We have a problemorg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-wgn-c25="" href="/" class="logo">...</a> is not clickable at point (220, 34). Other element would receive the click: <button mat-button="" type="button" cdkarialive="polite" class="mat-focus-indicator mat-calendar-period-button mat-button mat-button-base" aria-label="Choose month and year">...</button>
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70448d753939f14a31ccdbb6b73b95ee, clickElement {id=ab986cf1-7828-4cc8-9295-d2ce91513555}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49713/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (70448d753939f14a31ccdbb6b73b95ee)] -> css selector: .logo]
+Session ID: 70448d753939f14a31ccdbb6b73b95ee

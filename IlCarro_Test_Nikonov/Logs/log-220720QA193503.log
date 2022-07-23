@@ -1,0 +1,5 @@
+19:35:10.809  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+19:35:10.840  INFO  tests.TestBase - Start method with name ->>searchCurrentYearLocalDate
+19:35:10.843  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+19:35:10.997  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+19:35:11.975  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo

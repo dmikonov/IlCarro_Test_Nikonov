@@ -1,0 +1,9 @@
+22:25:25.340  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+22:25:25.415  INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize
+22:25:30.447  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Sign up ']
+22:25:30.567  INFO  manager.MyListener - WebDriver starts find element ---> By.id: name
+22:25:30.732  INFO  manager.MyListener - WebDriver starts find element ---> By.id: lastName
+22:25:30.899  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+22:25:31.094  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+22:25:31.791  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:last-child
+22:25:34.239  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:last-child

@@ -20,7 +20,6 @@ public class ApplicationManager {
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
     public void init(){
-
         wd=new ChromeDriver();
         WebDriverListener listener = new MyListener();
         wd = new EventFiringDecorator(listener).decorate(wd);

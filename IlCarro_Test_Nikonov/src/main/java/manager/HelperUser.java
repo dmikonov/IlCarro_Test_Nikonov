@@ -86,6 +86,7 @@ public class HelperUser extends HelperBase{
                         .textToBePresentInElement(wd.findElement(By.cssSelector("div.error div:last-child")), "Password must contain 1 uppercase letter, 1 lowercase letter and one number"));
 
         return lastChild;
+
     }
 
     public boolean isErrorPasswordSizeDisplayed() {
@@ -96,12 +97,8 @@ public class HelperUser extends HelperBase{
 
     }
 
-    public boolean isYallaButtoNotActive() {
-
-        boolean disabled = isElementPresent(By.cssSelector("button[disabled]"));
-        boolean enabled = wd.findElement(By.cssSelector("[type='submit']")).isEnabled();
-        System.out.println(enabled);
-        return disabled&&!enabled;
+    public boolean isYallaButtonNotActive() {
+        return wd.findElement(By.cssSelector("[type='submit']")).isEnabled();
     }
 
     public void login(User user) {

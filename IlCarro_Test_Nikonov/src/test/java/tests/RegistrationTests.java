@@ -54,13 +54,14 @@ public class RegistrationTests extends TestBase{
                 .setName("Zoa")
                 .setLastName("DSnow")
                 .setEmail("zoa@gmail.com")
-                .setPassword("Zoa");
+                .setPassword("Zoa666");
         app.getHelperUser().openRegistrationForm();
         app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().pause(500);
         app.getHelperUser().checkPolicyJS();
         Assert.assertTrue(app.getHelperUser().isErrorPasswordFormatDisplayed());
         Assert.assertTrue(app.getHelperUser().isErrorPasswordSizeDisplayed());
-        Assert.assertTrue(app.getHelperUser().isYallaButtoNotActive());
+        Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
 
 
 

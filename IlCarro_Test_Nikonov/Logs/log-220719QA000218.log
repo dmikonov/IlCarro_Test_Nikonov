@@ -1,0 +1,14 @@
+00:02:29.957  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+00:02:30.059  INFO  tests.TestBase - Start method with name ->>searchCurrentYear
+00:02:30.075  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+00:02:30.458  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+00:02:31.645  INFO  manager.MyListener - WebDriver starts find element ---> By.id: dates
+00:02:31.914  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+00:02:32.057  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 30 ']
+00:02:32.225  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+00:02:32.368  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+00:02:32.495  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+00:02:32.626  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+00:02:32.759  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 2 ']
+00:02:32.943  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+00:02:33.113  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']

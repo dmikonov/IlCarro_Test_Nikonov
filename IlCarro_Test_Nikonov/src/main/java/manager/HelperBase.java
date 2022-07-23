@@ -47,7 +47,11 @@ public class HelperBase {
         wd.findElement(By.cssSelector("button[type='submit']")).click();
         // wd.findElement(By.xpath("//button[text()='Y’alla!']")).click();  // YЕalla!
     }
+    public void submitWithoutWait() {
 
+        click(By.cssSelector("[type='submit']"));
+
+    }
     public boolean isElementPresent(By locator){
         return wd.findElements(locator).size()>0;
 
