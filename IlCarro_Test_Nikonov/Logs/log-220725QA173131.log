@@ -1,0 +1,56 @@
+17:31:37.805  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+17:31:37.922  INFO  tests.TestBase - Start method with name ->>searchAnyPeriod
+17:31:38.938  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+17:31:39.255  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+17:31:39.721  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:31:41.883  INFO  manager.MyListener - WebDriver starts find element ---> By.id: dates
+17:31:42.027  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+17:31:42.162  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 15 ']
+17:31:42.289  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 25 ']
+17:31:42.457  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+17:31:42.607  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+17:31:44.186  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+17:31:44.727  INFO  tests.TestBase - Start method with name ->>searchCurrentMounts
+17:31:45.729  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+17:31:45.972  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+17:31:46.341  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:31:46.505  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:31:46.646  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 28 ']
+17:31:46.756  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text() = ' 27 ']
+17:31:46.904  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+17:31:47.024  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+17:31:48.540  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+17:31:48.927  INFO  tests.TestBase - Start method with name ->>searchCurrentYear
+17:31:48.929  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:31:50.148  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+17:31:50.420  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+17:31:52.767  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:31:52.919  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:31:53.099  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+17:31:53.249  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 30 ']
+17:31:53.366  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+17:31:53.456  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+17:31:53.582  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+17:31:53.699  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+17:31:53.803  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 02 ']
+17:31:58.845  INFO  manager.MyListener - The name of method with error ->>>findElement
+17:31:58.854  INFO  manager.MyListener - We have a problemorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()=' 02 ']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51abaac3d05e592b42467fd3c9319cff, findElement {using=xpath, value=//div[text()=' 02 ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61620/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 51abaac3d05e592b42467fd3c9319cff
+17:31:58.860  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+17:32:00.042  INFO  manager.MyListener - The name of method with error ->>>click
+17:32:00.042  INFO  manager.MyListener - We have a problemorg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-gvf-c25="" href="/" class="logo">...</a> is not clickable at point (220, 34). Other element would receive the click: <button mat-button="" type="button" cdkarialive="polite" class="mat-focus-indicator mat-calendar-period-button mat-button mat-button-base" aria-label="Choose month and year">...</button>
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51abaac3d05e592b42467fd3c9319cff, clickElement {id=7ff9b583-c5db-4021-a881-174cfe86e8ba}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61620/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (51abaac3d05e592b42467fd3c9319cff)] -> css selector: .logo]
+Session ID: 51abaac3d05e592b42467fd3c9319cff

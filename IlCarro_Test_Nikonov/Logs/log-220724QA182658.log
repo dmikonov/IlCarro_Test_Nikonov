@@ -1,0 +1,10 @@
+18:27:05.370  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+18:27:05.423  INFO  tests.TestBase - Start method with name ->>searchPeriodPastNegative
+18:27:05.428  INFO  manager.MyListener - WebDriver starts find element ---> By.id: dates
+18:27:05.587  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+18:27:05.793  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+18:27:08.765  INFO  manager.MyListener - WebDriver starts find element ---> By.id: dates
+18:27:09.185  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .cdk-overlay-container
+18:27:09.341  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: [type='submit']
+18:27:09.467  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: [type='submit']
+18:27:12.228  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo

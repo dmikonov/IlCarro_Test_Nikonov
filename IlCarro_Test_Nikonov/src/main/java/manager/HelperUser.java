@@ -36,10 +36,12 @@ public class HelperUser extends HelperBase{
     }
 
     public void fillRegistrationForm(User user) {
+        WebElement el = wd.findElement(By.id("password"));
         type(By.id("name"),user.getName());
         type(By.id("lastName"), user.getLastName());
         type(By.id("email"), user.getEmail());
         type(By.id("password"), user.getPassword());
+        el.sendKeys(Keys.TAB);
     }
 
     public void checkPolicy() {
@@ -78,6 +80,7 @@ public class HelperUser extends HelperBase{
 
 
 
+
     public boolean isErrorPasswordFormatDisplayed() {
         System.out.println(wd.findElement(By.cssSelector("div.error div:last-child")).getText());
 
@@ -86,7 +89,6 @@ public class HelperUser extends HelperBase{
                         .textToBePresentInElement(wd.findElement(By.cssSelector("div.error div:last-child")), "Password must contain 1 uppercase letter, 1 lowercase letter and one number"));
 
         return lastChild;
-
     }
 
     public boolean isErrorPasswordSizeDisplayed() {
@@ -95,10 +97,6 @@ public class HelperUser extends HelperBase{
                 .until(ExpectedConditions
                         .textToBePresentInElement(wd.findElement(By.cssSelector("div.error div:first-child")), "Password must contain minimum 8 symbols"));
 
-    }
-
-    public boolean isYallaButtonNotActive() {
-        return wd.findElement(By.cssSelector("[type='submit']")).isEnabled();
     }
 
     public void login(User user) {

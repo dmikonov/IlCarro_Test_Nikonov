@@ -80,4 +80,12 @@ public class HelperBase {
             throw new RuntimeException(e);
         }
     }
+
+    public boolean isYallaButtonNotActive() {
+
+        boolean disabled = isElementPresent(By.cssSelector("button[disabled]"));
+        boolean enabled = wd.findElement(By.cssSelector("[type='submit']")).isEnabled();
+        System.out.println(enabled);
+        return disabled&&!enabled;
+    }
 }

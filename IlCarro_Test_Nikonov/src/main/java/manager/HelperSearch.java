@@ -27,7 +27,8 @@ public class HelperSearch extends HelperBase{
     }
 
     private void selectPeriodCurrentMonths(String dataFrom, String dataTo) {
-        click(By.id("dates"));
+        clearPeriod();
+        click(By.cssSelector("#dates"));
         String[] from = dataFrom.split("/"); //[7],[25],[2022]
         String locator = "//div[text()=' " + from[1]+" ']";
         click(By.xpath(locator));
@@ -36,20 +37,33 @@ public class HelperSearch extends HelperBase{
         click(By.xpath(locator2));
     }
 
-    private void typeCity(String city) {
-        type(By.id("city"),city);
-        click(By.cssSelector(".pac-item"));
-        pause(500);
+    private void clearPeriod() {
+        WebElement el = wd.findElement(By.cssSelector("#dates"));
+        String osName = System.getProperty("os.name");
+        System.out.println(osName);
+        if(osName.startsWith("Mac")){
+            el.sendKeys(Keys.COMMAND,"a");
+        }else {
+            el.sendKeys(Keys.CONTROL,"a");
+        }
+        el.sendKeys(Keys.DELETE);
     }
 
+    private void typeCity(String city) {
+        pause(1000);
+        type(By.id("city"),city);
+        click(By.cssSelector(".pac-item"));
+    }
     public void searchCurrentYear(String city, String dataFrom, String dataTo) {
+        clearPeriod();
         typeCity(city);
-        pause(500);
+        pause(2000);
         selectPeriodCurrentYear(dataFrom,dataTo);
     }
 
     public void selectPeriodCurrentYear(String dataFrom, String dataTo) {
-        click(By.id("dates"));
+        clearPeriod();
+        click(By.cssSelector("#dates"));
         String now = "7/18/2022";
         String[] nowA = now.split("/");
         String[] from = dataFrom.split("/");
@@ -92,10 +106,11 @@ public class HelperSearch extends HelperBase{
 
     public void searchCurrentYearLocalDate(String city, String dataFrom, String dataTo) {
         typeCity(city);
+        clearPeriod();
         LocalDate now = LocalDate.now();
-        LocalDate from = LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/dd/yyyy"));
-        LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/dd/yyyy"));
-        click(By.id("dates"));
+        LocalDate from = LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
+        LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/d/yyyy"));
+        click(By.cssSelector("#dates"));
         if(now.getMonthValue()!= from.getMonthValue()){
             int count = from.getMonthValue()- now.getMonthValue();
             clickByNextMonth(count);
@@ -112,9 +127,10 @@ public class HelperSearch extends HelperBase{
 
     public void searchAnyPeriodLocalDate2(String city, String dataFrom, String dataTo) {
         typeCity(city);
+        clearPeriod();
         LocalDate now = LocalDate.now();
-        LocalDate from= LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
-        LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/d/yyyy"));
+        LocalDate from= LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/dd/yyyy"));
+        LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/dd/yyyy"));
         click(By.id("dates"));
 
         int diffMonth = from.getYear()-now.getYear()
@@ -135,43 +151,46 @@ public class HelperSearch extends HelperBase{
     public void searchAnyPeriodLocalDate(String city, String dataFrom, String dataTo) {
         typeCity(city);
         LocalDate now = LocalDate.now();
-        LocalDate from = LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/dd/yyyy"));
-        LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/dd/yyyy"));
+        LocalDate from= LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
+        LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/d/yyyy"));
         click(By.id("dates"));
+        // "8/10/2022", "3/20/2023"
         int diffYear;
         int diffMonth;
-        diffYear = from.getYear()-now.getYear();
+
+        diffYear=from.getYear()-now.getYear();
         if(diffYear==0){
-            diffMonth = from.getMonthValue()-now.getMonthValue();
+            diffMonth= from.getMonthValue()-now.getMonthValue(); /// 8-7 =1
         }else {
-            diffMonth = 12 - now.getMonthValue() + from.getMonthValue();
+            diffMonth= 12-now.getMonthValue()+from.getMonthValue(); //12-7+3
         }
         clickByNextMonth(diffMonth);
-        String locator = String.format("//div[text()=' %s ']",to.getDayOfMonth());
+        String locator = String.format("//div[text()=' %s ']",from.getDayOfMonth());
         click(By.xpath(locator));
-        //////////////////////////////////////
+
+        ///**************
         diffYear=to.getYear()-from.getYear();
+
         if(diffYear==0){
             diffMonth = to.getMonthValue()-from.getMonthValue();
         }else {
-            diffMonth = 12 - from.getMonthValue() + to.getMonthValue();
+            diffMonth= 12-from.getMonthValue()+to.getMonthValue();
         }
         clickByNextMonth(diffMonth);
-        locator = String.format("//div[text()=' %s ']",to.getDayOfMonth());
+        locator=String.format("//div[text()=' %s ']",to.getDayOfMonth());
         click(By.xpath(locator));
+
     }
 
     public void searchPeriodPast(String city, String dataFrom, String dataTo) {
+        clearPeriod();
         typeCity(city);
         typePeriodPast(dataFrom,dataTo);
     }
 
     private void typePeriodPast(String dataFrom, String dataTo) {
-        WebElement el = wd.findElement(By.id("dates"));
-        el.sendKeys(Keys.CONTROL,"a");
-        el.sendKeys(Keys.DELETE);
         pause(2000);
-        type(By.id("dates"),dataFrom + " - "+dataTo);
+        type(By.cssSelector("#dates"),dataFrom + " - "+dataTo);
         click(By.cssSelector(".cdk-overlay-container"));
     }
 }

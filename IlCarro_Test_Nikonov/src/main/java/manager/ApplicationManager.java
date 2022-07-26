@@ -2,6 +2,7 @@ package manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
 import org.slf4j.Logger;
@@ -21,6 +22,7 @@ public class ApplicationManager {
 
     public void init(){
         wd=new ChromeDriver();
+        //wd = new FirefoxDriver();
         WebDriverListener listener = new MyListener();
         wd = new EventFiringDecorator(listener).decorate(wd);
         wd.manage().window().maximize();

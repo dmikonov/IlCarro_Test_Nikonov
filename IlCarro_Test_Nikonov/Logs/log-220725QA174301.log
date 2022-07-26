@@ -1,0 +1,32 @@
+17:43:11.959  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+17:43:12.049  INFO  tests.TestBase - Start method with name ->>searchCurrentYear
+17:43:12.054  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:43:13.282  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+17:43:13.525  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+17:43:15.960  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:43:16.094  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+17:43:16.260  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+17:43:16.386  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 30 ']
+17:43:16.534  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+17:43:16.658  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 02 ']
+17:43:21.693  INFO  manager.MyListener - The name of method with error ->>>findElement
+17:43:21.702  INFO  manager.MyListener - We have a problemorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()=' 02 ']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [662a13e0aa1fade9f9dd04ad16e8192a, findElement {using=xpath, value=//div[text()=' 02 ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62579/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 662a13e0aa1fade9f9dd04ad16e8192a
+17:43:21.712  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+17:43:22.886  INFO  manager.MyListener - The name of method with error ->>>click
+17:43:22.887  INFO  manager.MyListener - We have a problemorg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-pts-c25="" href="/" class="logo">...</a> is not clickable at point (220, 34). Other element would receive the click: <button mat-button="" type="button" cdkarialive="polite" class="mat-focus-indicator mat-calendar-period-button mat-button mat-button-base" aria-label="Choose month and year">...</button>
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [662a13e0aa1fade9f9dd04ad16e8192a, clickElement {id=cd323a78-5b4a-42e7-b0eb-95a368274864}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62579/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (662a13e0aa1fade9f9dd04ad16e8192a)] -> css selector: .logo]
+Session ID: 662a13e0aa1fade9f9dd04ad16e8192a

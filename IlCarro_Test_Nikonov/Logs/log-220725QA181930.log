@@ -1,0 +1,215 @@
+18:19:43.420  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+18:19:43.523  INFO  tests.TestBase - Start method with name ->>addNewCarSuccess
+18:19:48.601  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:19:48.809  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:19:49.283  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:19:49.605  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:19:49.791  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:19:50.741  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:19:51.022  INFO  tests.TestBase - Car is -> Car(address=Haifa, Israel, make=BMW, model=M5, year=2021, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsunption=6.5, carRegNumber=22-3331717, price=65, distanceIncluded=800, features=type of features, about=Very nice car)
+18:19:52.030  INFO  manager.MyListener - WebDriver starts find element ---> By.id: 1
+18:19:52.289  INFO  manager.MyListener - WebDriver starts find element ---> By.id: pickUpPlace
+18:19:52.704  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.pac-item
+18:19:53.791  INFO  manager.MyListener - WebDriver starts find element ---> By.id: make
+18:19:54.033  INFO  manager.MyListener - WebDriver starts find element ---> By.id: model
+18:19:54.242  INFO  manager.MyListener - WebDriver starts find element ---> By.id: year
+18:19:54.476  INFO  manager.MyListener - WebDriver starts find element ---> By.id: engine
+18:19:54.676  INFO  manager.MyListener - WebDriver starts find element ---> By.id: fuel
+18:19:54.750  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "Petrol"]
+18:19:54.791  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "Petrol"]
+18:19:54.847  INFO  manager.MyListener - WebDriver starts find element ---> By.id: gear
+18:19:54.912  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "AT"]
+18:19:54.950  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AT"]
+18:19:55.033  INFO  manager.MyListener - WebDriver starts find element ---> By.id: wheelsDrive
+18:19:55.117  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "AWD"]
+18:19:55.154  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AWD"]
+18:19:55.215  INFO  manager.MyListener - WebDriver starts find element ---> By.id: doors
+18:19:55.442  INFO  manager.MyListener - WebDriver starts find element ---> By.id: seats
+18:19:55.647  INFO  manager.MyListener - WebDriver starts find element ---> By.id: class
+18:19:55.839  INFO  manager.MyListener - WebDriver starts find element ---> By.id: fuelConsumption
+18:19:56.050  INFO  manager.MyListener - WebDriver starts find element ---> By.id: serialNumber
+18:19:56.316  INFO  manager.MyListener - WebDriver starts find element ---> By.id: price
+18:19:56.542  INFO  manager.MyListener - WebDriver starts find element ---> By.id: distance
+18:19:56.760  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: input[placeholder='Type feature']
+18:19:57.012  INFO  manager.MyListener - WebDriver starts find element ---> By.id: about
+18:19:57.256  INFO  manager.MyListener - WebDriver starts find element ---> By.id: photos
+18:19:57.388  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:19:59.680  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:01.819  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:02.314  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:02.410  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Search cars']
+18:20:02.571  INFO  tests.TestBase - Start method with name ->>loginNegativeTestsWrongEmail
+18:20:02.628  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:02.906  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:03.083  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:04.864  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:05.192  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:05.283  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:07.403  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:07.473  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:07.583  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:07.715  INFO  tests.TestBase - Start method with name ->>loginSuccess
+18:20:12.772  INFO  tests.TestBase - Test start with email: d020797@gmail.com & password: Ww12345$
+18:20:12.774  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:12.894  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:14.439  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:14.692  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:14.783  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:16.890  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:16.954  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:17.050  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:17.165  INFO  tests.TestBase - Start method with name ->>loginSuccess
+18:20:17.201  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:17.438  INFO  tests.TestBase - Test start with email: sonya@gmail.com & password: Ss12345$
+18:20:17.439  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:17.592  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:18.545  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:18.764  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:18.836  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:20.924  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:20.981  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:21.069  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:21.166  INFO  tests.TestBase - Start method with name ->>loginSuccess
+18:20:21.197  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:21.337  INFO  tests.TestBase - Test start with email: d020797@gmail.com & password: Ww12345$
+18:20:21.338  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:21.430  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:22.334  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:22.530  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:22.610  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:24.710  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:24.770  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:24.855  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:24.950  INFO  tests.TestBase - Start method with name ->>loginSuccess
+18:20:24.981  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:25.119  INFO  tests.TestBase - Test start with email: d020797@gmail.com & password: Ww12345$
+18:20:25.121  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:25.216  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:26.110  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:26.319  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:26.385  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:28.482  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:28.552  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:28.635  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:28.714  INFO  tests.TestBase - Start method with name ->>loginSuccess2
+18:20:28.745  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:28.915  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:29.054  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:30.036  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:30.216  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:30.315  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:32.409  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:32.468  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:32.550  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:32.641  INFO  tests.TestBase - Start method with name ->>loginSuccessDP
+18:20:32.670  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:32.820  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:32.918  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:33.122  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:33.322  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:33.399  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:35.523  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:35.579  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:35.669  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:35.769  INFO  tests.TestBase - Start method with name ->>loginSuccessDP
+18:20:35.801  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:35.953  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:36.053  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:36.275  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:36.474  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:36.552  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:38.658  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:38.723  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:38.807  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:38.883  INFO  tests.TestBase - Start method with name ->>loginSuccessDP
+18:20:38.910  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:39.024  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+18:20:39.120  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:39.322  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:39.515  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:39.607  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:41.754  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:41.810  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:41.897  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:41.987  INFO  tests.TestBase - Start method with name ->>registrationSuccess2
+18:20:42.019  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+18:20:42.168  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Sign up ']
+18:20:42.282  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:42.301  INFO  manager.MyListener - WebDriver starts find element ---> By.id: name
+18:20:42.505  INFO  manager.MyListener - WebDriver starts find element ---> By.id: lastName
+18:20:42.671  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:42.905  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:43.151  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:43.212  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:20:45.311  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+18:20:45.379  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+18:20:45.450  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+18:20:45.532  INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize
+18:20:50.584  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Sign up ']
+18:20:50.668  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:50.693  INFO  manager.MyListener - WebDriver starts find element ---> By.id: name
+18:20:50.886  INFO  manager.MyListener - WebDriver starts find element ---> By.id: lastName
+18:20:51.063  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+18:20:51.272  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+18:20:52.017  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:last-child
+18:20:52.079  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:last-child
+18:20:52.123  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:first-child
+18:20:52.169  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:first-child
+18:20:52.235  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: [type='submit']
+18:20:57.332  INFO  tests.TestBase - Start method with name ->>searchAnyPeriod
+18:20:58.340  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+18:21:03.417  INFO  manager.MyListener - The name of method with error ->>>findElement
+18:21:03.426  INFO  manager.MyListener - We have a problemorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#city"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e7805530a03d6db48879014b023787e, findElement {using=id, value=city}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64453/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e7805530a03d6db48879014b023787e
+18:21:03.429  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+18:21:04.457  INFO  tests.TestBase - Start method with name ->>searchCurrentMounts
+18:21:05.472  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+18:21:05.806  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+18:21:06.555  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:06.736  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:07.056  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 28 ']
+18:21:07.230  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text() = ' 27 ']
+18:21:07.408  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:21:07.549  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:21:08.991  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+18:21:09.331  INFO  tests.TestBase - Start method with name ->>searchCurrentYear
+18:21:09.332  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:10.482  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+18:21:10.751  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+18:21:13.104  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:13.234  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:13.335  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+18:21:13.436  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 30 ']
+18:21:13.571  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+18:21:13.698  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 2 ']
+18:21:13.850  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:21:13.950  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:21:15.384  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+18:21:15.700  INFO  tests.TestBase - Start method with name ->>searchCurrentYearLocalDate
+18:21:16.718  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+18:21:16.980  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+18:21:17.319  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:17.496  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:17.632  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+18:21:17.737  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 10 ']
+18:21:17.835  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+18:21:17.927  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[@aria-label='Next month']
+18:21:18.003  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //div[text()=' 20 ']
+18:21:18.100  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:21:18.167  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+18:21:19.642  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo
+18:21:20.005  INFO  tests.TestBase - Start method with name ->>searchPeriodPastNegative
+18:21:20.006  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:21.138  INFO  manager.MyListener - WebDriver starts find element ---> By.id: city
+18:21:21.420  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .pac-item
+18:21:23.734  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: #dates
+18:21:24.133  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .cdk-overlay-container
+18:21:24.304  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: [type='submit']
+18:21:24.482  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: [type='submit']

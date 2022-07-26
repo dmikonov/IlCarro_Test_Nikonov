@@ -1,0 +1,52 @@
+22:35:38.745  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+22:35:38.928  INFO  tests.TestBase - Start method with name ->>addNewCarSuccess
+22:35:44.045  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+22:35:44.380  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+22:35:44.722  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+22:35:44.998  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+22:35:45.085  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+22:35:47.003  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+22:35:47.312  INFO  tests.TestBase - Car is -> Car(address=Haifa, Israel, make=BMW, model=M5, year=2021, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsunption=6.5, carRegNumber=22-3331308, price=65, distanceIncluded=800, features=type of features, about=Very nice car)
+22:35:48.324  INFO  manager.MyListener - WebDriver starts find element ---> By.id: 1
+22:35:48.658  INFO  manager.MyListener - WebDriver starts find element ---> By.id: pickUpPlace
+22:35:48.984  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.pac-item
+22:35:50.636  INFO  manager.MyListener - WebDriver starts find element ---> By.id: make
+22:35:50.918  INFO  manager.MyListener - WebDriver starts find element ---> By.id: model
+22:35:51.200  INFO  manager.MyListener - WebDriver starts find element ---> By.id: year
+22:35:51.487  INFO  manager.MyListener - WebDriver starts find element ---> By.id: engine
+22:35:51.763  INFO  manager.MyListener - WebDriver starts find element ---> By.id: fuel
+22:35:51.794  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "Petrol"]
+22:35:51.818  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "Petrol"]
+22:35:52.041  INFO  manager.MyListener - WebDriver starts find element ---> By.id: gear
+22:35:52.089  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "AT"]
+22:35:52.107  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AT"]
+22:35:52.328  INFO  manager.MyListener - WebDriver starts find element ---> By.id: wheelsDrive
+22:35:52.369  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "AWD"]
+22:35:52.390  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AWD"]
+22:35:52.612  INFO  manager.MyListener - WebDriver starts find element ---> By.id: doors
+22:35:52.875  INFO  manager.MyListener - WebDriver starts find element ---> By.id: seats
+22:35:53.130  INFO  manager.MyListener - WebDriver starts find element ---> By.id: class
+22:35:53.387  INFO  manager.MyListener - WebDriver starts find element ---> By.id: fuelConsumption
+22:35:53.666  INFO  manager.MyListener - WebDriver starts find element ---> By.id: serialNumber
+22:35:53.942  INFO  manager.MyListener - WebDriver starts find element ---> By.id: price
+22:35:54.186  INFO  manager.MyListener - WebDriver starts find element ---> By.id: distance
+22:35:54.447  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: input[placeholder='Type feature']
+22:35:55.005  INFO  manager.MyListener - The name of method with error ->>>clear
+22:35:55.009  INFO  manager.MyListener - We have a problemorg.openqa.selenium.StaleElementReferenceException: The element reference of <input class="feature-input ng-star-inserted" type="text"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [61dbf020-dd6d-4950-b420-d6678ac13ffc, clearElement {id=f98d1c47-acab-4039-b2b2-7a14da2d5507}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:57451, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19364, moz:profile: C:\Users\Dmitrii\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:57451/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (61dbf020-dd6d-4950-b420-d6678ac13ffc)] -> css selector: input[placeholder='Type feature']]
+Session ID: 61dbf020-dd6d-4950-b420-d6678ac13ffc
+22:35:55.013  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Search cars']
+22:35:59.436  INFO  manager.MyListener - The name of method with error ->>>findElement
+22:35:59.437  INFO  manager.MyListener - We have a problemorg.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [61dbf020-dd6d-4950-b420-d6678ac13ffc, findElement {using=xpath, value=//button[text()='Search cars']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:57451, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19364, moz:profile: C:\Users\Dmitrii\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:57451/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61dbf020-dd6d-4950-b420-d6678ac13ffc

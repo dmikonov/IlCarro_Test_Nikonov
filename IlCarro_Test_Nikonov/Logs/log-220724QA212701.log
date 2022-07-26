@@ -1,0 +1,14 @@
+21:27:09.915  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+21:27:09.980  INFO  tests.TestBase - Start method with name ->>searchAnyPeriod
+21:27:09.986  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .input-label
+21:27:10.086  INFO  manager.MyListener - The name of method with error ->>>clear
+21:27:10.093  INFO  manager.MyListener - We have a problemorg.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bd868df12b35584de2f7c6aad360856, clearElement {id=bbfd213f-c93c-4637-8f0f-241f11e370c5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Dmitrii\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58235/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9bd868df12b35584de2f7c6aad360856)] -> css selector: .input-label]
+Session ID: 9bd868df12b35584de2f7c6aad360856
+21:27:10.098  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: .logo

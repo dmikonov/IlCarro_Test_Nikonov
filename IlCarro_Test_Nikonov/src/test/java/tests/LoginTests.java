@@ -1,5 +1,7 @@
 package tests;
 
+import manager.MyDataProvider;
+import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,17 +14,25 @@ public class LoginTests extends TestBase{
             app.getHelperUser().logout();
         }
     }
+    @Test(dataProvider = "dataLogin",dataProviderClass = MyDataProvider.class)
+    public void loginSuccess(String email, String password){
+        logger.info("Test start with email: "+email+" & password: "+password);
+        app.getHelperUser().openLoginForm();
+        app.getHelperUser().fillLoginForm(email,password);
+        app.getHelperUser().submit();
+        Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in");
+    }
     @Test
-    public void loginASuccess(){
+    public void loginSuccess2(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("d020797@gmail.com","Ww12345$");
         app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in");
     }
-
-    public void loginASuccess2(){
+    @Test(dataProvider = "loginCSV",dataProviderClass = MyDataProvider.class)
+    public void loginSuccessDP(User user){
         app.getHelperUser().openLoginForm();
-        app.getHelperUser().fillLoginForm("d020797@gmail.com","Ww12345$");
+        app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in");
     }
@@ -37,8 +47,4 @@ public class LoginTests extends TestBase{
     public void postCondition(){
         app.getHelperUser().clickOk();
     }
-
-
-
-
 }

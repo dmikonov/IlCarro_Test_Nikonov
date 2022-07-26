@@ -1,0 +1,8 @@
+20:45:30.321  INFO  manager.MyListener - The name of method with error ->>>getCurrentUrl
+20:45:30.339  INFO  manager.MyListener - We have a problemorg.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [40db2e46-6ca7-4e83-baea-cb022809f263, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:54202, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 27760, moz:profile: C:\Users\Dmitrii\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:54202/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 40db2e46-6ca7-4e83-baea-cb022809f263

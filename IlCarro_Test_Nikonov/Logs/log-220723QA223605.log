@@ -1,0 +1,54 @@
+22:36:14.617  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+22:36:14.742  INFO  tests.TestBase - Start method with name ->>addNewCarSuccess
+22:36:19.794  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+22:36:20.102  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+22:36:20.413  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+22:36:20.694  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+22:36:20.773  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+22:36:21.315  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+22:36:21.631  INFO  tests.TestBase - Car is -> Car(address=Haifa, Israel, make=BMW, model=M5, year=2021, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsunption=6.5, carRegNumber=22-3331102, price=65, distanceIncluded=800, features=type of features, about=Very nice car)
+22:36:22.634  INFO  manager.MyListener - WebDriver starts find element ---> By.id: 1
+22:36:22.955  INFO  manager.MyListener - WebDriver starts find element ---> By.id: pickUpPlace
+22:36:23.275  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.pac-item
+22:36:24.917  INFO  manager.MyListener - WebDriver starts find element ---> By.id: make
+22:36:25.196  INFO  manager.MyListener - WebDriver starts find element ---> By.id: model
+22:36:25.466  INFO  manager.MyListener - WebDriver starts find element ---> By.id: year
+22:36:25.758  INFO  manager.MyListener - WebDriver starts find element ---> By.id: engine
+22:36:26.049  INFO  manager.MyListener - WebDriver starts find element ---> By.id: fuel
+22:36:26.090  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "Petrol"]
+22:36:26.114  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "Petrol"]
+22:36:26.348  INFO  manager.MyListener - WebDriver starts find element ---> By.id: gear
+22:36:26.402  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "AT"]
+22:36:26.425  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AT"]
+22:36:26.657  INFO  manager.MyListener - WebDriver starts find element ---> By.id: wheelsDrive
+22:36:26.710  INFO  manager.MyListener - new before find by -->By.xpath: .//option[@value = "AWD"]
+22:36:26.741  INFO  manager.MyListener - WebDriver start found element by locator -->By.xpath: .//option[@value = "AWD"]
+22:36:26.981  INFO  manager.MyListener - WebDriver starts find element ---> By.id: doors
+22:36:27.265  INFO  manager.MyListener - WebDriver starts find element ---> By.id: seats
+22:36:27.548  INFO  manager.MyListener - WebDriver starts find element ---> By.id: class
+22:36:27.836  INFO  manager.MyListener - WebDriver starts find element ---> By.id: fuelConsumption
+22:36:28.119  INFO  manager.MyListener - WebDriver starts find element ---> By.id: serialNumber
+22:36:28.401  INFO  manager.MyListener - WebDriver starts find element ---> By.id: price
+22:36:28.652  INFO  manager.MyListener - WebDriver starts find element ---> By.id: distance
+22:36:28.922  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: input[placeholder='Type feature']
+22:36:29.189  INFO  manager.MyListener - WebDriver starts find element ---> By.id: about
+22:36:29.465  INFO  manager.MyListener - WebDriver starts find element ---> By.id: photos
+22:36:29.500  INFO  manager.MyListener - The name of method with error ->>>sendKeys
+22:36:29.505  INFO  manager.MyListener - We have a problemorg.openqa.selenium.InvalidArgumentException: File not found: C:/Users/Dmitrii/Desktop/QA34/IlCarro_Test_Nikonov/IlCarro_Test_Nikonov/auto1.jpeg
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b6e0cb34-34cf-43d8-91bf-06972cec5f92, sendKeysToElement {id=81a043db-6a2a-4591-87e3-27dceb9ff1e2, value=[Ljava.lang.CharSequence;@22da2fe6}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:54106, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 16860, moz:profile: C:\Users\Dmitrii\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:54106/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (b6e0cb34-34cf-43d8-91bf-06972cec5f92)] -> id: photos]
+Session ID: b6e0cb34-34cf-43d8-91bf-06972cec5f92
+22:36:29.510  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Search cars']
+22:36:34.519  INFO  manager.MyListener - The name of method with error ->>>findElement
+22:36:34.520  INFO  manager.MyListener - We have a problemorg.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()='Search cars']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-GAODKJDU', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b6e0cb34-34cf-43d8-91bf-06972cec5f92, findElement {using=xpath, value=//button[text()='Search cars']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:54106, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 16860, moz:profile: C:\Users\Dmitrii\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:54106/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b6e0cb34-34cf-43d8-91bf-06972cec5f92
