@@ -4,8 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -50,8 +53,10 @@ public class HelperSearch extends HelperBase{
     }
 
     private void typeCity(String city) {
-        pause(1000);
+        new WebDriverWait(wd, Duration.ofSeconds(5))
+                .until(ExpectedConditions.visibilityOf(wd.findElement(By.id("city"))));
         type(By.id("city"),city);
+        pause(500);
         click(By.cssSelector(".pac-item"));
     }
     public void searchCurrentYear(String city, String dataFrom, String dataTo) {
@@ -106,11 +111,11 @@ public class HelperSearch extends HelperBase{
 
     public void searchCurrentYearLocalDate(String city, String dataFrom, String dataTo) {
         typeCity(city);
+        click(By.cssSelector("#dates"));
         clearPeriod();
         LocalDate now = LocalDate.now();
         LocalDate from = LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
         LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/d/yyyy"));
-        click(By.cssSelector("#dates"));
         if(now.getMonthValue()!= from.getMonthValue()){
             int count = from.getMonthValue()- now.getMonthValue();
             clickByNextMonth(count);
@@ -127,12 +132,11 @@ public class HelperSearch extends HelperBase{
 
     public void searchAnyPeriodLocalDate2(String city, String dataFrom, String dataTo) {
         typeCity(city);
+        click(By.id("dates"));
         clearPeriod();
         LocalDate now = LocalDate.now();
         LocalDate from= LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/dd/yyyy"));
         LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/dd/yyyy"));
-        click(By.id("dates"));
-
         int diffMonth = from.getYear()-now.getYear()
                 ==0 ? from.getMonthValue() -now.getMonthValue() : 12-now.getMonthValue()+ from.getMonthValue();
 

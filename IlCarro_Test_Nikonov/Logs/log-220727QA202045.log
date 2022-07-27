@@ -1,0 +1,1 @@
+20:20:45.534  INFO  tests.TestBase - Car is -> Car(address=Haifa, Israel, make=BMW, model=M5, year=2021, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsunption=6.5, carRegNumber=22-3331951, price=65, distanceIncluded=800, features=type of features, about=Very nice car)

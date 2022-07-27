@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         if(app.getHelperUser().isLogged()){
             app.getHelperUser().logout();
         }
     }
-    //@Test(dataProvider = "dataRegistration",dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "dataRegistration",dataProviderClass = MyDataProvider.class, enabled = false)
     public void registrationSuccess(User user){
         //int i =(int) (System.currentTimeMillis()/1000)%3600;
        // User user = new User().setName("Lis").setLastName("Snow").setEmail("fox"+i+"@mail.com").setPassword("Ff12345$");
@@ -25,7 +25,7 @@ public class RegistrationTests extends TestBase{
         app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getMessage(),"Registered");
     }
-    @Test
+    @Test(groups = {"web"})
     public void registrationSuccess2(){
         int i =(int) (System.currentTimeMillis()/1000)%3600;
         User user = new User().setName("Lis").setLastName("Snow").setEmail("fox"+i+"@mail.com").setPassword("Ff12345$");
@@ -51,7 +51,7 @@ public class RegistrationTests extends TestBase{
         Assert.assertTrue(app.getHelperUser().isErrorPasswordSizeDisplayed());
         Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition(){
         app.getHelperUser().clickOk();
     }

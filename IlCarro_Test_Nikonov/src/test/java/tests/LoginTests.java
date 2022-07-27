@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         if(app.getHelperUser().isLogged()){
             app.getHelperUser().logout();
@@ -22,7 +22,7 @@ public class LoginTests extends TestBase{
         app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in");
     }
-    @Test
+    @Test(groups = {"web"})
     public void loginSuccess2(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("d020797@gmail.com","Ww12345$");
@@ -43,7 +43,7 @@ public class LoginTests extends TestBase{
         app.getHelperUser().submit();
         Assert.assertNotEquals(app.getHelperUser().getMessage(),"Logged in");
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition(){
         app.getHelperUser().clickOk();
     }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.RegistrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-07-27T20:02:03" hostname="LAPTOP-GAODKJDU" time="5.808">
+  <properties/>
+  <testcase name="registrationSuccess2" classname="tests.RegistrationTests" time="3.385"/>
+  <testcase name="registrationWrongPasswordFormatSize" classname="tests.RegistrationTests" time="2.04"/>
+  <system-out><![CDATA[23:02:03.305  INFO  tests.TestBase - Start method with name ->>registrationSuccess2
+23:02:03.333  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+23:02:03.479  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Sign up ']
+23:02:03.612  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+23:02:03.642  INFO  manager.MyListener - WebDriver starts find element ---> By.id: name
+23:02:03.890  INFO  manager.MyListener - WebDriver starts find element ---> By.id: lastName
+23:02:04.086  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+23:02:04.326  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+23:02:04.566  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+23:02:04.627  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+23:02:06.728  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+23:02:06.788  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container h1
+23:02:06.887  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+23:02:07.014  INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize
+23:02:07.050  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+23:02:07.236  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Sign up ']
+23:02:07.377  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+23:02:07.412  INFO  manager.MyListener - WebDriver starts find element ---> By.id: name
+23:02:07.651  INFO  manager.MyListener - WebDriver starts find element ---> By.id: lastName
+23:02:07.898  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+23:02:08.226  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+23:02:08.997  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:last-child
+Password must contain 1 uppercase letter, 1 lowercase letter and one number
+23:02:09.055  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:last-child
+23:02:09.100  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:first-child
+Password must contain minimum 8 symbols
+23:02:09.152  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:first-child
+23:02:09.229  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: [type='submit']
+false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

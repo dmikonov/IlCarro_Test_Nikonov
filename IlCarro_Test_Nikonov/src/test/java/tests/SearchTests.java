@@ -1,7 +1,7 @@
 package tests;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class SearchTests extends TestBase{
@@ -29,8 +29,9 @@ public class SearchTests extends TestBase{
         app.search().takeScreenshots("C:/Users/Dmitrii/Desktop/QA34/IlCarro_Test_Nikonov/IlCarro_Test_Nikonov/src/test/screenshots/screen4.png");
     }
 
-    @Test
+    @Test(groups = {"web"})
     public void searchAnyPeriod(){
+        app.search().pause(2000);
         app.search().searchAnyPeriodLocalDate2("Jerusalem","6/30/2023","7/12/2023");
         app.search().submit();
         Assert.assertTrue(app.search().isListOfCarsAppeared());
@@ -45,7 +46,7 @@ public class SearchTests extends TestBase{
         app.search().takeScreenshots("C:/Users/Dmitrii/Desktop/QA34/IlCarro_Test_Nikonov/IlCarro_Test_Nikonov/src/test/screenshots/screen6.png");
 
     }
-    @AfterMethod
+    @BeforeMethod(alwaysRun = true)
     public void returnToHome(){
         app.search().returnToHome();
     }

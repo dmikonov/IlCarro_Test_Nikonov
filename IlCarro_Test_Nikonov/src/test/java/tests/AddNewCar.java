@@ -11,16 +11,14 @@ import org.testng.annotations.Test;
 import java.util.Random;
 
 public class AddNewCar extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         if(!app.getHelperUser().isLogged()){
             app.getHelperUser().login(new User().setEmail("d020797@gmail.com").setPassword("Ww12345$"));
         }
     }
-    @Test(dataProvider = "validCar",dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "validCar",dataProviderClass = MyDataProvider.class, enabled = false)
     public void addNewCarSuccessDP(Car car){
-        int index = (int) (System.currentTimeMillis() /1000) % 36000;
-        car.setCarRegNumber("548-321-" + index);
         logger.info("Car is -> " + car.toString());
         app.car().openCarForm();
         app.car().fillCarForm(car);
@@ -28,7 +26,7 @@ public class AddNewCar extends TestBase{
         app.car().submit();
         Assert.assertEquals(app.car().getMessage(),"Car added");
     }
-    @Test
+    @Test(groups = {"web","smoke","regress"})
     public void addNewCarSuccess(){
         Random random = new Random();
         int i = random.nextInt(1000)+1000;
@@ -59,7 +57,7 @@ public class AddNewCar extends TestBase{
         Assert.assertEquals(app.car().getMessage(),"Car added");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
         public void postCondition(){
         app.car().returnToHome();
     }
