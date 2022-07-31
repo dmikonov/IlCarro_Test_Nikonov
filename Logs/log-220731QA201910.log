@@ -1,0 +1,25 @@
+20:19:24.783  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+20:19:24.847  INFO  tests.TestBase - Start method with name ->>registrationSuccess2
+20:19:29.911  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Sign up ']
+20:19:30.676  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+20:19:30.696  INFO  manager.MyListener - WebDriver starts find element ---> By.id: name
+20:19:31.273  INFO  manager.MyListener - WebDriver starts find element ---> By.id: lastName
+20:19:32.033  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+20:19:32.557  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+20:19:33.410  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+20:19:33.474  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: button[type='submit']
+20:19:35.810  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.dialog-container
+20:19:41.195  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //button[text()='Ok']
+20:19:41.927  INFO  tests.TestBase - Start method with name ->>registrationWrongPasswordFormatSize
+20:19:41.946  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Logout ']
+20:19:42.701  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Sign up ']
+20:19:43.450  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+20:19:43.464  INFO  manager.MyListener - WebDriver starts find element ---> By.id: name
+20:19:44.227  INFO  manager.MyListener - WebDriver starts find element ---> By.id: lastName
+20:19:44.727  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
+20:19:45.496  INFO  manager.MyListener - WebDriver starts find element ---> By.id: password
+20:19:46.547  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:last-child
+20:19:46.581  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:last-child
+20:19:46.607  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:first-child
+20:19:46.627  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: div.error div:first-child
+20:19:46.655  INFO  manager.MyListener - WebDriver starts find element ---> By.cssSelector: [type='submit']
