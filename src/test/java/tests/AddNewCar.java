@@ -52,7 +52,7 @@ public class AddNewCar extends TestBase{
         logger.info("Car is -> " + car.toString());
         app.car().openCarForm();
         app.car().fillCarForm(car);
-        app.car().attachPhoto("C:/Users/Dmitrii/Desktop/QA34/IlCarro_Test_Nikonov/IlCarro_Test_Nikonov/auto1.jpeg");
+        app.car().attachPhoto("C:/Users/Dmitrii/Desktop/QA34/IlCarro_Test_Nikonov/auto1.jpeg");
         app.car().submit();
         Assert.assertEquals(app.car().getMessage(),"Car added");
     }
