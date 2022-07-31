@@ -22,7 +22,7 @@ public class HelperUser extends HelperBase{
 
     public void fillLoginForm(String email,String password){
         type(By.id("email"),email);
-        takeScreenshots("C:/Users/Dmitrii/Desktop/QA34/IlCarro_Test_Nikonov/src/test/screenshots");
+        takeScreenshots("src/test/screenshots");
         type(By.id("password"),password);
 
     }
