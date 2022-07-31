@@ -1,0 +1,4 @@
+20:48:53.342  INFO  manager.ApplicationManager - Current URL ---> https://ilcarro-1578153671498.web.app/search
+20:48:53.435  INFO  tests.TestBase - Start method with name ->>loginSuccess2
+20:48:58.479  INFO  manager.MyListener - WebDriver starts find element ---> By.xpath: //a[text()=' Log in ']
+20:48:58.686  INFO  manager.MyListener - WebDriver starts find element ---> By.id: email
